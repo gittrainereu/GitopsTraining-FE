@@ -16,7 +16,7 @@ jobs:
           echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
           pwd 
           ls -la
-          /bin/false
+          #/bin/false
           echo "### Hello world in builde after false! :rocket:" >> $GITHUB_STEP_SUMMARY
     
   deploy:
