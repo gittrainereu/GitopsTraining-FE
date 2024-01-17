@@ -13,9 +13,11 @@ jobs:
     steps:
       - name: Run a one-line script
         run: | 
+          echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
           pwd 
           ls -la
           /bin/false
+          echo "### Hello world in builde after false! :rocket:" >> $GITHUB_STEP_SUMMARY
     
   deploy:
     
@@ -30,3 +32,4 @@ jobs:
         run: | 
           echo "starting the deployment process" 
           ls -la
+          echo "### Hello world in deploy! :rocket:" >> $GITHUB_STEP_SUMMARY
